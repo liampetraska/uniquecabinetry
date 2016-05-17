@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Componenets | Arcus - Responsive Business Template</title>
+  <meta name="description" content="Arcus is Responsive Business Template, crafted with Foundation framwork with HTML5, CSS3 and jQuery.">
+  <meta name="keywords" content="corporate, template, html5, css3, jQuery, themeforest, responsive, business">
+  <meta name="author" content="harmonikas996 (http://www.lukacvetinovic.com)">
+
+  
+	<!-- CSS - "css/foundation.css" is default -->
+	<link rel="stylesheet" href="css/foundation.css">
+
+	<!-- Modernizr 2.6.2 -->
+	<script src="js/modernizr.custom.js"></script>
+
+	<!-- Latest jQuery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  
+  <!-- Google font -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+  <!-- FONT AWESOME icons -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- SUPERFISH NAVIGATION  -->
+		<link rel="stylesheet" href="js/superfish-nav/dist/css/superfish.css" media="screen">
+		<style> </style>
+		<script src="js/superfish-nav/dist/js/hoverIntent.js"></script>
+		<script src="js/superfish-nav/dist/js/superfish.js"></script>
+		<script>
+
+		(function($){ //create closure so we can safely use $ as alias for jQuery
+
+			$(document).ready(function(){
+
+				// initialise plugin
+				var example = $('#example').superfish({
+					//add options here if required
+				});
+
+				// buttons to demonstrate Superfish's public methods
+				$('.destroy').on('click', function(){
+					example.superfish('destroy');
+				});
+
+				$('.init').on('click', function(){
+					example.superfish();
+				});
+
+				$('.open').on('click', function(){
+					example.children('li:first').superfish('show');
+				});
+
+				$('.close').on('click', function(){
+					example.children('li:first').superfish('hide');
+				});
+			});
+
+		})(jQuery);
+
+
+		</script>
+</head>
+<body>
+	<!-- NAVIBAR -->
+	<div class="top_nav">
+	<div class="row">
+	<div class="large-4 columns logo">
+				<span>Arcus</span>
+	</div>
+	<div class="large-8 columns">
+	<nav>
+	<!-- Navigation -->
+	<ul class="sf-menu" id="example">
+			<li class="current">
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="#">Coming Soon</a>
+					<ul>
+						<li><a href="soon.html">First Version</a></li>
+						<li><a href="soon_2.html">Second Version</a></li>
+					</ul>
+			</li>
+			<li>
+				<a href="#">Pages</a>
+					<ul>
+						<li><a href="404.html">404 Not Found Page</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="components.html">All Componenets</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="hosting.html">Hosting Home Page</a></li>
+						<li><a href="hosting_domains.html">Hosting Domain Registration</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="services.html">Services First</a></li>
+						<li><a href="services_2.html">Services Second</a></li>
+					</ul>
+			</li>
+			<li>
+				<a href="#">Blog</a>
+					<ul>
+						<li><a href="blog.html">Blog Right Navigation</a></li>
+						<li><a href="blog_left_nav.html">Blog Left Navigation</a></li>
+						<li><a href="blog_single.html">Blog Single Post</a></li>
+					</ul>
+			</li>
+			<li id="nav_button"><a target="_blank" href="lukacvetinovic.com">Support</a></li>
+	</ul><!-- end of Navigation -->
+		<!-- Navigation on Mobile Devices -->
+				<select> 
+					<option value="#" selected="selected">Menu</option> 
+					<option value="index.html">Home</option> 
+					<option value="#">Coming Soon</option>
+						<option value="soon.html">-- First Version</option>
+						<option value="soon_2.html">-- Second Version</option>
+					<option value="#">Pages</option>
+						<option value="404.html">-- 404 Not Found Page</option>
+						<option value="about.html">-- About</option>
+						<option value="components.html">-- All Components</option>
+						<option value="contact.html">-- Contact</option>
+						<option value="hosting.html">-- Hosting Home Page</option>
+						<option value="hosting_domains.html">-- Hosting Domain Registration</option>
+						<option value="portfolio.html">-- Portfolio</option>
+						<option value="services.html">-- Services First</option>
+						<option value="services_2.html">-- Services Second</option>
+					<option value="#">Blog</option>
+						<option value="blog.html">-- Blog Right Navigation</option>
+						<option value="blog_left_nav.html">-- Blog Left Navigation</option>
+						<option value="blog_single.html">-- Blog Single Post</option>
+					<option value="lukacvetinovic.com">Support</option>
+				</select>
+		<!-- end of Navigation on Mobile Devices -->
+	</nav>
+	</div>
+	</div>
+	</div>
+	<!-- end of NAVIBAR -->
+
+	<div class="row arcus-content divider-2">
+		<div class="large-12 columns big-h to-center arcus-content">
+			<h3>Welcome to Arcus - Responsive Business Template</h3>
+			<h5 class="subheader">Built with Foundation 4</h5>
+		</div>
+	</div>
+
+	<div class="row arcus-content">
+		<div class="large-12 columns">
+			<!-- Grid Example -->
+			<div class="arcus-content">
+			<div class="big-h">
+			<h1>Grid system</h1>
+			<h5 class="subheader">Built for all devices</h5>
+			</div>
+			<div class="row">
+				<div class="large-12 columns">
+						<h3>Twelve columns</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-6 columns">
+						<h3>Six columns</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+				<div class="large-6 columns">
+						<h3>Six columns</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-4 columns">
+						<h3>Four columns</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				</div>
+				<div class="large-4 columns">
+						<h3>Four columns</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				</div>
+				<div class="large-4 columns">
+						<h3>Four columns</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-6 columns">
+						<h3>Six columns</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				</div>
+				<div class="large-3 columns">
+						<h3>Three columns</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				</div>
+				<div class="large-3 columns">
+						<h3>Three columns</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				</div>
+			</div>
+			</div>
+			
+			<div class="big-h">
+			<h1>Buttons</h1>
+			<h5 class="subheader">Lot of variations</h5>
+			</div>
+			<br>
+			<br>
+			<h3>Round Buttons</h3>
+			  <div class="row">
+				<div class="large-12 columns">
+				  <p><a href="#" class="medium round button">Medium Button</a> <a href="#" class="medium round success button">Medium Success Button</a> <a href="#" class="medium round alert button">Medium Alert Button</a> <a href="#" class="medium round warning button">Medium Warning Button</a></p>
+				</div>
+			  </div>
+			<br>
+			<br>
+			<h3>Radius Buttons</h3>
+			  <div class="row">
+				<div class="large-12 columns">
+				  <p><a href="#" class="medium radius button">Medium Button</a> <a href="#" class="medium radius success button">Medium Success Button</a> <a href="#" class="medium radius alert button">Medium Alert Button</a> <a href="#" class="medium radius warning button">Medium Warning Button</a></p>
+				</div>
+			  </div>
+			<br>
+			<br>
+			<h3>Square Buttons</h3>
+			  <div class="row">
+				<div class="large-12 columns">
+				  <p><a href="#" class="medium square button">Medium Button</a> <a href="#" class="medium square success button">Medium Success Button</a> <a href="#" class="medium square alert button">Medium Alert Button</a> <a href="#" class="medium square warning button">Medium Warning Button</a></p>
+				</div>
+			  </div>
+			<br>
+			<br>
+			<h3>Disabled Buttons</h3>
+			  <div class="row">
+				<div class="large-12 columns">
+				  <p><a href="#" class="large disabled button">Large Button</a> <a href="#" class="large disabled success button">Large Success Button</a> <a href="#" class="large disabled alert button">Large Alert Button</a> <a href="#" class="large disabled warning button">Large Warning Button</a></p>
+				</div>
+			  </div>
+			<br>
+			<br>
+			<h3>Buttons with Icons</h3>
+			  <div class="row">
+				<div class="large-12 columns">
+				  <p><a href="#"  class="medium button"><i id="iconic" class="icon-gear"></i> Settings</a> <a href="#"  class="medium alert button">Favorite <i id="iconic-right" class="icon-heart"></i></a> <a href="#"  class="medium secondary button"><i id="iconic-secondary" class="icon-globe"></i> Google Maps</a></p>
+				</div>
+			  </div>
+			<br>
+			<br>
+			<h3>Button Groups</h3>
+			  <div class="row">
+				<div class="large-12 columns">
+				<ul class="button-group round">
+				  <li><a href="#" class="small button">Button 1</a></li>
+				  <li><a href="#" class="small button">Button 2</a></li>
+				  <li><a href="#" class="small button">Button 3</a></li>
+				</ul>
+				<ul class="button-group radius">
+				  <li><a href="#" class="medium alert button">Button 1</a></li>
+				  <li><a href="#" class="medium warning button">Button 2</a></li>
+				  <li><a href="#" class="medium success button">Button 3</a></li>
+				</ul>
+				<ul class="button-group square">
+				  <li><a href="#" class="small secondary button">Button 1</a></li>
+				  <li><a href="#" class="small secondary button">Button 2</a></li>
+				  <li><a href="#" class="small secondary button">Button 3</a></li>
+				</ul>
+				<ul class="button-group square">
+				  <li><a href="#" class="small secondary button"><i id="iconic-secondary" class="icon-gear"></i> Settings</a></li>
+				  <li><a href="#" class="small secondary button"><i id="iconic-secondary" class="icon-search"></i> Search</a></li>
+				  <li><a href="#" class="small secondary button"><i id="iconic-secondary" class="icon-user"></i> Profile</a></li>
+				</ul>
+				<ul class="button-group square">
+				  <li><a href="#" class="small alert button"><i id="iconic" class="icon-gear"></i> Settings</a></li>
+				  <li><a href="#" class="small alert button"><i id="iconic" class="icon-search"></i> Search</a></li>
+				  <li><a href="#" class="small alert button"><i id="iconic" class="icon-user"></i> Profile</a></li>
+				</ul>
+				</div>
+			  </div>
+			<br>
+			<br>
+			<h3>Dropdown Buttons</h3>
+			  <div class="row">
+				<div class="large-12 columns">
+				<a href="#" data-dropdown="drop1" class="button dropdown radius">Dropdown Button</a><br>
+
+				<ul id="drop1" class="f-dropdown">
+				  <li><a href="#">This is a link</a></li>
+				  <li><a href="#">This is another</a></li>
+				  <li><a href="#">Yet another</a></li>
+				</ul>
+				<a href="#" data-dropdown="drop2" class="button dropdown small alert square">Dropdown Button</a><br>
+
+				<ul id="drop2" class="f-dropdown">
+				  <li><a href="#">I like it!</a></li>
+				  <li><a href="#">I do not like it!</a></li>
+				  <li><a href="#">I hate it!</a></li>
+				</ul>
+				<a href="#" data-dropdown="drop3" class="button dropdown small secondary square"><i id="iconic-secondary" class="icon-globe"></i> Location</a><br>
+
+				<ul id="drop3" class="f-dropdown">
+				  <li><a href="#">Europe</a></li>
+				  <li><a href="#">Asia</a></li>
+				  <li><a href="#">North America</a></li>
+				  <li><a href="#">South America</a></li>
+				  <li><a href="#">Africa</a></li>
+				  <li><a href="#">Australia</a></li>
+				</ul>
+				</div>
+			  </div>
+			<br>
+			<br>
+			<h3>Split Buttons</h3>
+			  <div class="row">
+				<div class="large-12 columns">
+				<a href="#" class="button medium secondary split"><i id="iconic-secondary" class="icon-globe"></i> Location <span data-dropdown="drop3"></span></a> <br>
+				<a href="#" class="button medium split">Dropdown Button <span data-dropdown="drop4"></span></a>
+				<ul id="drop4" class="f-dropdown" data-dropdown-content>
+				  <li><a href="#">This is a link</a></li>
+				  <li><a href="#">This is another</a></li>
+				  <li><a href="#">Yet another</a></li>
+				</ul> <br>
+				<a href="#" class="button small alert split">Dropdown Button <span data-dropdown="drop5"></span></a>
+				<ul id="drop5" class="f-dropdown" data-dropdown-content>
+				  <li><a href="#">First</a></li>
+				  <li><a href="#">Second</a></li>
+				  <li><a href="#">Third</a></li>
+				</ul> <br>
+				<a href="#" class="button tiny warning split">Dropdown Button <span data-dropdown="drop6"></span></a>
+				<ul id="drop6" class="f-dropdown" data-dropdown-content>
+				  <li><a href="#">Like</a></li>
+				  <li><a href="#">Dislike</a></li>
+				  <li><a href="#">Ignore</a></li>
+				</ul>
+				</div>
+			  </div>
+			  <!-- PROGRESS BARS -->
+			<div class="arcus-content big-h">
+			<h1>Progress Bars</h1>
+			<h5 class="subheader">Display your skills, current project process, ...</h5>
+			</div>
+			  <div class="row">
+				<div class="large-6 columns">
+				<h3>Rounded Progress Bars</h3>
+					<div class="progress large-6 round"><span class="meter" style="width: 40%"></span></div>
+					<div class="progress large-6 secondary round"><span class="meter" style="width: 80%"></span></div>
+					<div class="progress large-6 alert round"><span class="meter" style="width: 65%"></span></div>
+					<div class="progress large-6 success round"><span class="meter" style="width: 25%"></span></div>
+					
+					<br>
+					
+				<h3>Square Progress Bars</h3>
+					<div class="progress large-6"><span class="meter" style="width: 40%"></span></div>
+					<div class="progress large-6 secondary"><span class="meter" style="width: 80%"></span></div>
+					<div class="progress large-6 alert"><span class="meter" style="width: 65%"></span></div>
+					<div class="progress large-6 success"><span class="meter" style="width: 25%"></span></div>
+				</div>
+				<div class="large-6 columns optimized">
+				<h3>Animated Progress Bars</h3>
+				<div class="skillbar clearfix " data-percent="100%">
+					<div class="skillbar-title"><span>HTML / CSS</span></div>
+					<div class="skillbar-bar" style="background: #e74c3c;"></div>
+					<div class="skill-bar-percent">100%</div>
+				</div>
+				<div class="skillbar clearfix " data-percent="80%">
+					<div class="skillbar-title"><span>PHP / MySQL</span></div>
+					<div class="skillbar-bar" style="background: #2ecc71;"></div>
+					<div class="skill-bar-percent">80%</div>
+				</div>
+				<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title"><span>Web Design</span></div>
+					<div class="skillbar-bar" style="background: #3F92D2;"></div>
+					<div class="skill-bar-percent">60%</div>
+				</div>
+				<div class="skillbar clearfix " data-percent="40%">
+					<div class="skillbar-title"><span>CEO</span></div>
+					<div class="skillbar-bar" style="background: #34495e;"></div>
+					<div class="skill-bar-percent">40%</div>
+				</div>
+				<br>
+				<h5>More Info</h5>
+				<p>Progress bars are fully customizable. You can set your color, transition speed, percentage, font, font size, ...</p>
+				</div>
+			  </div>
+			  <div class="row arcus-content">
+				<div class="large-12 columns big-h">
+				<h1>Alert Boxes</h1>
+				<h5 class="subheader">Alerts are a handy element</h5>
+				<div class="arcus-content">
+				<div data-alert class="alert-box">
+				This is a <strong>standard alert.</strong>
+				  <a href="#" class="close">&times;</a>
+				</div>
+				<div data-alert class="alert-box radius">
+				This is a <strong>radius alert.</strong>
+				  <a href="#" class="close">&times;</a>
+				</div>
+				<div data-alert class="alert-box round">
+				This is a <strong>round alert.</strong>
+				  <a href="#" class="close">&times;</a>
+				</div>
+				<div data-alert class="alert-box success">
+				This is a <strong>success alert.</strong>
+				  <a href="#" class="close">&times;</a>
+				</div>
+				<div data-alert class="alert-box alert">
+				This is an <strong>alert.</strong>
+				  <a href="#" class="close">&times;</a>
+				</div>
+				<div data-alert class="alert-box warning">
+				This is a <strong>warning.</strong>
+				  <a href="#" class="close">&times;</a>
+				</div>
+				<div data-alert class="alert-box secondary">
+				This is a <strong>secondary alert.</strong>
+				  <a href="#" class="close">&times;</a>
+				</div>
+				</div>
+				<h1>Labels</h1>
+				<h5 class="subheader">Useful inline styles</h5>
+				<br>
+				<span class="label">Default</span>
+				<span class="alert label">Alert</span>
+				<span class="warning label">Warning</span>
+				<span class="success label">Success</span>
+				<div class="arcus-content">
+				<h5>There are many variations of passages of Lorem Ipsum <span class="warning label">available</span>, but the majority have suffered alteration in some form, by <span class="alert label">injected</span> humour, or randomised.</h5>
+				<p>There are many variations of passages of Lorem Ipsum <span class="warning label">available</span>, but the majority have suffered alteration in some form, by <span class="alert label">injected</span> humour, or randomised.</p>
+				</div>
+				<h1>Keystrokes</h1>
+				<h5 class="subheader">Explain keyboard affordances.</h5>
+				<p>Cycles through open programs in taskbar. Hold <kbd>alt</kbd> and continuously press <kbd>tab</kbd> to move</p>
+				<p>Cycles through open programs in taskbar without needing to hold <kbd class="primary">alt</kbd> continuously. Press <kbd class="alert">alt</kbd> + <kbd class="warning">ctrl</kbd> + <kbd class="success">tab</kbd> once, then continue with <kbd class="black">arrow keys</kbd> and press <kbd>enter</kbd> on application.</p>
+				</div>
+				<div class="large-12 columns big-h">
+				<h1>Typography</h1>
+				<h5 class="subheader">Best Typography provided with Arcus</h5>
+				<div class="arcus-content divider-2">
+				<h3>Headings</h3>
+				<h1>h1. This is a very large header.</h1>
+				<h2>h2. This is a large header.</h2>
+				<h3>h3. This is a medium header.</h3>
+				<h4>h4. This is a moderate header.</h4>
+				<h5>h5. This is a small header.</h5>
+				<h6>h6. This is a tiny header.</h6>
+				</div>
+				<div class="arcus-content divider-2">
+				<h3>Subheaders</h3>
+				<h1 class="subheader">h1.subheader</h1>
+				<h2 class="subheader">h2.subheader</h2>
+				<h3 class="subheader">h3.subheader</h3>
+				<h4 class="subheader">h4.subheader</h4>
+				<h5 class="subheader">h5.subheader</h5>
+				<h6 class="subheader">h6.subheader</h6>
+				</div>
+				<div class="arcus-content divider-2">
+				<h3>Headers and Subheaders</h3>
+				<div class="big-h">
+				<h1>This is a big header.</h1>
+				<h5 class="subheader">Big Subheader</h5>
+				</div>
+				<div class="medium-h">
+				<h3>This is a medium header.</h3>
+				<h5 class="subheader">Medium Subheader</h5>
+				</div>
+				<div class="small-h">
+				<h3>This is a small header.</h3>
+				<h5 class="subheader">Small Subheader</h5>
+				</div>
+				</div>
+				<div class="arcus-content divider-2">
+				<h3>Text Alignment</h3>
+				<br>
+				<h5 class="to-left">To-left.</h5>
+				<h5 class="to-center">To-center.</h5>
+				<h5 class="to-right">To-right.</h5>
+				</div>
+				</div>
+			  </div>
+			  <!-- end of -->
+			  
+			  <div class="row">
+			  <div class="large-12 columns big-h">
+				<h1>Blockquotes</h1>
+				<h5 class="subheader">Put here some smart quote</h5>
+				<br>
+				<blockquote class="medium">I do not fear computers. I fear the lack of them. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.<cite>Isaac Asimov</cite></blockquote>
+				<blockquote class="big">Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.<cite>Nikola Tesla</cite></blockquote>
+			  </div>
+			  </div>
+			  <div class="row">
+			  <div class="arcus-content large-12 columns big-h">
+				<h1>Navigation & Pagination</h1>
+				<h5 class="subheader">For best possible page organization</h5>
+				<br>
+				<br>
+				<div class="large-9 columns optimized">
+				<h3>Pagination</h3>
+				<div class="pagination">
+				  <ul class="pagination">
+					<li class="arrow unavailable"><a href="">&laquo;</a></li>
+					<li class="current"><a href="">1</a></li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li class="unavailable"><a href="">&hellip;</a></li>
+					<li><a href="">12</a></li>
+					<li><a href="">13</a></li>
+					<li class="arrow"><a href="">&raquo;</a></li>
+				  </ul>
+				</div>
+				<br>
+				<br>
+				<h3>Sub Navigation</h3>
+				<dl class="sub-nav">
+				  <dt>Filter:</dt>
+				  <dd class="active"><a href="#">All</a></dd>
+				  <dd><a href="#">Web design</a></dd>
+				  <dd><a href="#">Graphic design</a></dd>
+				  <dd><a href="#">Print design</a></dd>
+				</dl>
+				</div>
+				<div class="large-3 columns optimized">
+				<h3>Side Navigation</h3>
+				<ul class="side-nav">
+				  <li class="active"><a href="#">Link 1</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Link 2</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Link 3</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Link 4</a></li>
+				</ul>
+				</div>
+			  </div>
+			  <div class="row arcus-content">
+				<div class="large-12 columns big-h">
+				<h1>Pricing Tables</h1>
+				<h5 class="subheader">Easiest way to show your prices</h5>
+				<br>
+				<br>
+				<ul class="pricing-table large-4 columns">
+				  <li class="title">Standard</li>
+				  <li class="price">$99.99</li>
+				  <li class="description">An awesome description</li>
+				  <li class="bullet-item">1 Database</li>
+				  <li class="bullet-item">5GB Storage</li>
+				  <li class="bullet-item">20 Users</li>
+				  <li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+				</ul>
+				<ul class="pricing-table large-4 columns">
+				  <li class="title-elite">Elite</li>
+				  <li class="price-elite">$99.99</li>
+				  <li class="description">An awesome description</li>
+				  <li class="bullet-item">1 Database</li>
+				  <li class="bullet-item">5GB Storage</li>
+				  <li class="bullet-item">20 Users</li>
+				  <li class="cta-button"><a class="button elite" href="#">Buy Now</a></li>
+				</ul>
+				<ul class="pricing-table large-4 columns">
+				  <li class="title-power-elite">Power Elite</li>
+				  <li class="price-power-elite">$99.99</li>
+				  <li class="description">An awesome description</li>
+				  <li class="bullet-item">1 Database</li>
+				  <li class="bullet-item">5GB Storage</li>
+				  <li class="bullet-item">20 Users</li>
+				  <li class="bullet-item">cPanel</li>
+				  <li class="cta-button"><a class="button power-elite" href="#">Buy Now</a></li>
+				</ul>
+				</div>
+				
+			  </div>
+			  <div class="row">
+				<div class="large-12 columns big-h">
+				<h1>Tables</h1>
+				<h5 class="subheader">Not sexy - but useful!</h5>
+				<br>
+				<br>
+				<table>
+				  <thead>
+					<tr>
+					  <th width="50">#</th>
+					  <th width="200">Job</th>
+					  <th width="200">First name</th>
+					  <th width="200">Years</th>
+					  <th width="200">Country</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>1</td>
+					  <td>Web design</td>
+					  <td>Luka</td>
+					  <td>78</td>
+					  <td>Serbia</td>
+					</tr>
+					<tr>
+					  <td>2</td>
+					  <td>Graphic design</td>
+					  <td>John</td>
+					  <td>56</td>
+					  <td>United States</td>
+					</tr>
+					<tr>
+					  <td>3</td>
+					  <td>Product design</td>
+					  <td>David</td>
+					  <td>102</td>
+					  <td>Italy</td>
+					</tr>
+				  </tbody>
+				</table>
+				<br>
+				<br>
+				<table class="custom">
+				  <thead>
+					<tr>
+					  <th width="50">#</th>
+					  <th width="200">Job</th>
+					  <th width="200">First name</th>
+					  <th width="200">Years</th>
+					  <th width="200">Country</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>1</td>
+					  <td>Web design</td>
+					  <td>Luka</td>
+					  <td>78</td>
+					  <td>Serbia</td>
+					</tr>
+					<tr>
+					  <td>2</td>
+					  <td>Graphic design</td>
+					  <td>John</td>
+					  <td>56</td>
+					  <td>United States</td>
+					</tr>
+					<tr>
+					  <td>3</td>
+					  <td>Product design</td>
+					  <td>David</td>
+					  <td>102</td>
+					  <td>Italy</td>
+					</tr>
+				  </tbody>
+				</table>
+				<br>
+				<br>
+				<table class="hover">
+				  <thead>
+					<tr>
+					  <th width="50">#</th>
+					  <th width="200">Job</th>
+					  <th width="200">First name</th>
+					  <th width="200">Years</th>
+					  <th width="200">Country</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>1</td>
+					  <td>Web design</td>
+					  <td>Luka</td>
+					  <td>78</td>
+					  <td>Serbia</td>
+					</tr>
+					<tr>
+					  <td>2</td>
+					  <td>Graphic design</td>
+					  <td>John</td>
+					  <td>56</td>
+					  <td>United States</td>
+					</tr>
+					<tr>
+					  <td>3</td>
+					  <td>Product design</td>
+					  <td>David</td>
+					  <td>102</td>
+					  <td>Italy</td>
+					</tr>
+				  </tbody>
+				</table>
+				<br>
+				<br>
+				<table class="basic">
+				  <thead>
+					<tr>
+					  <th width="50">#</th>
+					  <th width="200">Job</th>
+					  <th width="200">First name</th>
+					  <th width="200">Years</th>
+					  <th width="200">Country</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>1</td>
+					  <td>Web design</td>
+					  <td>Luka</td>
+					  <td>78</td>
+					  <td>Serbia</td>
+					</tr>
+					<tr>
+					  <td>2</td>
+					  <td>Graphic design</td>
+					  <td>John</td>
+					  <td>56</td>
+					  <td>United States</td>
+					</tr>
+					<tr>
+					  <td>3</td>
+					  <td>Product design</td>
+					  <td>David</td>
+					  <td>102</td>
+					  <td>Italy</td>
+					</tr>
+				  </tbody>
+				</table>
+				</div>
+			  </div>
+	  
+			</div>
+		</div>
+	</div>
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation.min.js"></script>
+  <!--
+  
+  <script src="js/foundation/foundation.js"></script>
+  
+  <script src="js/foundation/foundation.alerts.js"></script>
+  
+  <script src="js/foundation/foundation.clearing.js"></script>
+  
+  <script src="js/foundation/foundation.cookie.js"></script>
+  
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  
+  <script src="js/foundation/foundation.forms.js"></script>
+  
+  <script src="js/foundation/foundation.joyride.js"></script>
+  
+  <script src="js/foundation/foundation.magellan.js"></script>
+  
+  <script src="js/foundation/foundation.orbit.js"></script>
+  
+  <script src="js/foundation/foundation.reveal.js"></script>
+  
+  <script src="js/foundation/foundation.section.js"></script>
+  
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  
+  <script src="js/foundation/foundation.topbar.js"></script>
+  
+  <script src="js/foundation/foundation.interchange.js"></script>
+  
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  
+  <script src="js/foundation/foundation.abide.js"></script>
+  
+  -->
+  
+  <script>
+    $(document).foundation();
+  </script>
+  
+  <!-- Responsive nav -->
+    <script>
+  $("nav select").change(function() {
+  window.location = $(this).find("option:selected").val();
+  });
+  </script>
+  <!-- end of Responsive nav -->
+  
+  <!-- Animated Progress Bars -->
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script>
+  jQuery('.skillbar').each(function(){
+	jQuery(this).find('.skillbar-bar').animate({
+		width:jQuery(this).attr('data-percent')
+	},8500);
+});
+  </script>
+  <!-- end of Animated Progress Bars -->
+</body>
+</html>

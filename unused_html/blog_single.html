@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
+  <title>Blog Post | Arcus - Responsive Business Template</title>
+  <meta name="description" content="Arcus is Responsive Business Template, crafted with Foundation framwork with HTML5, CSS3 and jQuery.">
+  <meta name="keywords" content="corporate, template, html5, css3, jQuery, themeforest, responsive, business">
+  <meta name="author" content="harmonikas996 (http://www.lukacvetinovic.com)">
+
+	<!-- CSS - "css/foundation.css" is default -->
+	<link rel="stylesheet" href="css/foundation.css">
+
+	<!-- Modernizr 2.6.2 -->
+	<script src="js/modernizr.custom.js"></script>
+
+	<!-- Latest jQuery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<!-- FANCY BOX -->
+	
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+	</style>
+
+	<!-- Google font -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+	<!-- FONT AWESOME icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Responsive nav -->
+	<script>
+		// Create the dropdown base
+		$("<select />").appendTo("nav");
+
+		// Create default option "Go to..."
+		$("<option />", {
+		   "selected": "selected",
+		   "value"   : "",
+		   "text"    : "Go to..."
+		}).appendTo("nav select");
+
+		// Populate dropdown with menu items
+		$("nav a").each(function() {
+		 var el = $(this);
+		 $("<option />", {
+			 "value"   : el.attr("href"),
+			 "text"    : el.text()
+		 }).appendTo("nav select");
+		});
+    </script>
+
+<!-- SUPERFISH NAVIGATION  -->
+		<link rel="stylesheet" href="js/superfish-nav/dist/css/superfish.css" media="screen">
+		<style> </style>
+		<script src="js/superfish-nav/dist/js/hoverIntent.js"></script>
+		<script src="js/superfish-nav/dist/js/superfish.js"></script>
+		<script>
+
+		(function($){ //create closure so we can safely use $ as alias for jQuery
+
+			$(document).ready(function(){
+
+				// initialise plugin
+				var example = $('#example').superfish({
+					//add options here if required
+				});
+
+				// buttons to demonstrate Superfish's public methods
+				$('.destroy').on('click', function(){
+					example.superfish('destroy');
+				});
+
+				$('.init').on('click', function(){
+					example.superfish();
+				});
+
+				$('.open').on('click', function(){
+					example.children('li:first').superfish('show');
+				});
+
+				$('.close').on('click', function(){
+					example.children('li:first').superfish('hide');
+				});
+			});
+
+		})(jQuery);
+
+
+		</script>
+</head>
+<body>
+	<!-- NAVIBAR -->
+	<div class="top_nav">
+	<div class="row">
+	<div class="large-4 columns logo">
+				<span>Arcus</span>
+	</div>
+	<div class="large-8 columns">
+	<nav>
+	<!-- Navigation -->
+	<ul class="sf-menu" id="example">
+			<li class="current">
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="#">Coming Soon</a>
+					<ul>
+						<li><a href="soon.html">First Version</a></li>
+						<li><a href="soon_2.html">Second Version</a></li>
+					</ul>
+			</li>
+			<li>
+				<a href="#">Pages</a>
+					<ul>
+						<li><a href="404.html">404 Not Found Page</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="components.html">All Componenets</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="hosting.html">Hosting Home Page</a></li>
+						<li><a href="hosting_domains.html">Hosting Domain Registration</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="services.html">Services First</a></li>
+						<li><a href="services_2.html">Services Second</a></li>
+					</ul>
+			</li>
+			<li>
+				<a href="#">Blog</a>
+					<ul>
+						<li><a href="blog.html">Blog Right Navigation</a></li>
+						<li><a href="blog_left_nav.html">Blog Left Navigation</a></li>
+						<li><a href="blog_single.html">Blog Single Post</a></li>
+					</ul>
+			</li>
+			<li id="nav_button"><a target="_blank" href="lukacvetinovic.com">Support</a></li>
+	</ul><!-- end of Navigation -->
+		<!-- Navigation on Mobile Devices -->
+				<select> 
+					<option value="#" selected="selected">Menu</option> 
+					<option value="index.html">Home</option> 
+					<option value="#">Coming Soon</option>
+						<option value="soon.html">-- First Version</option>
+						<option value="soon_2.html">-- Second Version</option>
+					<option value="#">Pages</option>
+						<option value="404.html">-- 404 Not Found Page</option>
+						<option value="about.html">-- About</option>
+						<option value="components.html">-- All Components</option>
+						<option value="contact.html">-- Contact</option>
+						<option value="hosting.html">-- Hosting Home Page</option>
+						<option value="hosting_domains.html">-- Hosting Domain Registration</option>
+						<option value="portfolio.html">-- Portfolio</option>
+						<option value="services.html">-- Services First</option>
+						<option value="services_2.html">-- Services Second</option>
+					<option value="#">Blog</option>
+						<option value="blog.html">-- Blog Right Navigation</option>
+						<option value="blog_left_nav.html">-- Blog Left Navigation</option>
+						<option value="blog_single.html">-- Blog Single Post</option>
+					<option value="lukacvetinovic.com">Support</option>
+				</select>
+		<!-- end of Navigation on Mobile Devices -->
+	</nav>
+	</div>
+	</div>
+	</div>
+	<!-- end of NAVIBAR -->
+	<!-- Content -->
+	<div class="row arcus-content">
+		<!-- Blog Posts -->
+		<div class="large-9 columns">
+			<!-- Regular Post -->
+			<div class="medium-h to-left">
+			<a href="#"><h3>This is a Regular Post</h3></a>
+			<div class="field"><h5 class="subheader post-info"><i class="icon-tags"></i> <a href="#">Design</a>, <a href="#">Web</a>, <a href="#">Typography</a>, <a href="#">Modern</a></h5></div>
+			<div class="field"><h5 class="subheader post-info"><i class="icon-user"></i> <a href="#">Arcus</a></h5></div>
+			<div class="field"><h5 class="subheader post-info"><i class="icon-comment"></i> <a href="#">5 Comments</a></h5></div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum...</p>
+			<br>
+			<blockquote class="big">Money does not represent such a value as men have placed upon it. All my money has been invested into experiments with which I have made new discoveries enabling mankind to have a little easier life.<cite>Nikola Tesla</cite></blockquote>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+			<div class="arcus-content">
+			<a class="fancybox" href="img/1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="img/1-small.jpg" alt="" /></a>
+			<a class="fancybox" href="img/2.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="img/2-small.jpg" alt="" /></a>
+			<a class="fancybox" href="img/3.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="img/3-small.jpg" alt="" /></a>
+			<a class="fancybox" href="img/4.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="img/4-small.jpg" alt="" /></a>
+			</div>
+			<h3>Where can I get some?</h3>
+			<h5 class="subheader">You are lucky one!</h5>
+			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+			</div>
+			<!-- COMMENTS -->
+			<div class="arcus-content medium-h">
+			<h3>What others think?</h3>
+			<h5 class="subheader">3 Comments</h5>
+			<!-- User Comment -->
+			<div class="user-comment small-h to-left">
+			<img src="img/member2.jpg"></img>
+			<div class="user-info">
+			<h3>Jenny Doe</h3>
+			<h5 class="subheader">Director at <a href="#">CCA</a></h5>
+			<p>I really like this article. Good luck!</p>
+			<a class="small button" href="#">Reply</a>
+			</div>
+			</div>
+			<!-- end of User Comment -->
+			<!-- User Reply Comment -->
+			<div class="user-comment small-h to-left reply">
+			<img src="img/member1.jpg"></img>
+			<div class="user-info">
+			<h3>Arcus <span class="label">Admin</span></h3>
+			<h5 class="subheader">Reply on Jenny Doe's <a href="#">comment</a></h5>
+			<p>Thank you a lot. Appreciate it!</p>
+			<a class="small button" href="#">Reply</a>
+			</div>
+			</div>
+			<!-- end of User Reply Comment -->
+			<!-- User Comment -->
+			<div class="user-comment small-h to-left">
+			<img src="img/harmonikas996.png"></img>
+			<div class="user-info">
+			<h3>harmonikas996 <span class="label">Designer</span></h3>
+			<h5 class="subheader">CEO at <a href="http://www.lukacvetinovic.com">harmonikas996</a></h5>
+			<p>I really like this article. Good luck!</p>
+			<a class="small button" href="#">Reply</a>
+			</div>
+			</div>
+			<!-- end of User Comment -->
+			<!-- Leave your reply -->
+			<div class="medium-h leave-reply">
+			<h3>Leave your reply</h3>
+			<h5 class="subheader">Keep it simple. Do not spam!</h5>
+			<div class="reply-form">
+			<div class="large-6"><input class="" type="text" placeholder="Your name"></div>
+			<div class="large-6"><input class="" type="text" placeholder="Website"></div>
+			<div class="large-6"><textarea class="" type="text" placeholder="Your comment . . ."></textarea></div>
+			<a href="#" type="submit" class="medium button">Submit Reply</a>
+			</div>
+			</div>
+			<!-- end of Leave your reply -->
+			</div>
+			<!-- end of COMMENTS -->
+		</div>
+			<!-- end of Regular Post -->
+		<!-- end of Blog Posts -->
+		<!-- WIDGETS -->
+		<div class="large-3 columns columns to-left">
+				<!-- Search -->
+				<div class="padding-bottom">
+				<input id="search-box" type="text" value="" placeholder="Search">
+				</div>
+				<!-- end of Search -->
+				<!-- Categories -->
+				<div class="space-bottom">
+				<h3>Categories</h3>
+				<ul class="side-nav">
+				  <li><a href="#">Design</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Development</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">News</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Tutorials</a></li>
+				</ul>
+				</div>
+				<!-- end of Categories -->
+				<!-- Latest Posts -->
+				<div class="space-bottom">
+				<h3>Latest Posts</h3>
+				<ul class="side-nav latest-posts">
+				  <li><a href="#">New Update on the way</a><p>July 21 - 10:25 PM</p></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Aliens are coming very fast!</a><p>May 2 - 8:41 AM</p></li>
+				  <li class="divider"></li>
+				  <li><a href="#">TNT is not good</a><p>March 16 - 11:31 PM</p></li>
+				  <li class="divider"></li>
+				  <li><a href="#">HTML5 Tricks and Tips</a><p>January 28 - 2:55 AM</p></li>
+				</ul>
+				</div>
+				<!-- end of Latest Posts -->
+				<!-- Tags -->
+				<div class="space-bottom tags">
+				<h3>Tags</h3>
+				<li><a href="#">Web</a></li>
+				<li><a href="#">Branding</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">Development</a></li>
+				<li><a href="#">Identity</a></li>
+				<li><a href="#">Design</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Tutorials</a></li>
+				</div>
+				<!-- end of Tags -->
+				<!-- Archives -->
+				<div class="space-bottom">
+				<h3>Archives</h3>
+				<ul class="side-nav">
+				  <li><a href="#">Jan 2013</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Feb 2013</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Mar 2013</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Apr 2013</a></li>
+				</ul>
+				</div>
+				<!-- end of Archives -->
+				<!-- Sign Up -->
+				<div class="space-bottom">
+				<h3>Newsletter</h3>
+				<p>Get notices about our new releases! Special Offers and more...</p>
+				<a href="#" class="small button">Sign Up</a>
+				</div>
+				<!-- end of Sign Up -->
+				<!-- Latest Posts -->
+				<div class="space-bottom">
+				<h3>Social Networks</h3>
+				<ul class="side-nav social-networks">
+				  <li><a href="#">Follow</a><p>on Twitter</p></li>
+				  <li><a href="#">Like</a><p>on Facebook</p></li>
+				  <li><a href="#">Subscribe</a><p>on Youtube</p></li>
+				  
+				</ul>
+				</div>
+				<!-- end of Latest Posts -->
+		</div>
+		<!-- end of WIDGETS -->
+	</div>
+	<!-- end of Content -->
+	<!-- Footer_big -->
+	<div class="footer_big arcus-content">
+		<div class="row">
+			<div class="large-3 columns responsive_space">
+			<h3>Arcus</h3>
+			<div class="decorative-line"></div>
+			<p>Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scriptaset patrioque scribentur, at pro fugit erts verterem molestiae, sed et vivendo ali Lorem ipsum ex vix illud nonummy</p>
+			</div>
+			<div class="large-3 columns responsive_space">
+			<h3>Partners</h3>
+			<div class="decorative-line"></div>
+				<ul>
+				  <li><a href="#top">Lorem Ipsum is simply</a></li>
+				  <li><a href="#features">Dummy text of the printing</a></li>
+				  <li><a href="#portfolio">And typesetting industry</a></li>
+				  <li><a href="#team">Lorem Ipsum has been</a></li>
+				</ul>
+			</div>
+			<div class="large-3 columns responsive_space">
+			<h3>Newsletter</h3>
+			<div class="decorative-line"></div>
+			<p>Get notices about our new releases! Special Offers and more...</p>
+			<a class="button footer-button" href="#">Sign Up</a>
+			</div>
+			<div class="large-3 columns responsive_space">
+			<h3>Promotion</h3>
+			<div class="decorative-line"></div>
+			<a target="_blank" href="http://themeforest.net/?ref=harmonikas996"><img src="img/add1.gif"></img></a>
+			</div>
+		</div>
+	</div>
+	<!-- end of Footer_big -->
+	<!-- Footer_small -->
+	<div class="footer_small">
+		<div class="row">
+			<div class="footer_small_copyright copyright_mobile">
+				<div class="large-6 columns">
+				<p>&#169; Arcus - harmonikas996. All Rights Reserved!</p>
+				</div>
+			</div>
+			<div class="footer_small_social to-right">
+			<div class="large-6 columns">
+			<a target="_blank" href="#"><i class="icon-facebook"></i></a>
+			<a target="_blank" href="#"><i class="icon-twitter"></i></a>
+			<a target="_blank" href="#"><i class="icon-dribbble"></i></a>
+			<a target="_blank" href="#"><i class="icon-linkedin"></i></a>
+			<a target="_blank" href="#"><i class="icon-pinterest"></i></a>
+			</div>
+			</div>
+		</div>
+	</div><!-- end of Footer_small -->
+		
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation.min.js"></script>
+  <!--
+  
+  <script src="js/foundation/foundation.js"></script>
+  
+  <script src="js/foundation/foundation.alerts.js"></script>
+  
+  <script src="js/foundation/foundation.clearing.js"></script>
+  
+  <script src="js/foundation/foundation.cookie.js"></script>
+  
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  
+  <script src="js/foundation/foundation.forms.js"></script>
+  
+  <script src="js/foundation/foundation.joyride.js"></script>
+  
+  <script src="js/foundation/foundation.magellan.js"></script>
+  
+  <script src="js/foundation/foundation.orbit.js"></script>
+  
+  <script src="js/foundation/foundation.reveal.js"></script>
+  
+  <script src="js/foundation/foundation.section.js"></script>
+  
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  
+  <script src="js/foundation/foundation.topbar.js"></script>
+  
+  <script src="js/foundation/foundation.interchange.js"></script>
+  
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  
+  <script src="js/foundation/foundation.abide.js"></script>
+  
+  -->
+  
+  <script>
+    $(document).foundation();
+  </script>
+  
+  <!-- Responsive nav -->
+    <script>
+  $("nav select").change(function() {
+  window.location = $(this).find("option:selected").val();
+  });
+  </script>
+</body>
+</html>

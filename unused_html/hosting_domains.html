@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
+  <title>Domain Registration - Responsive Business Template</title>
+  <meta name="description" content="Arcus is Responsive Business Template, crafted with Foundation framwork with HTML5, CSS3 and jQuery.">
+  <meta name="keywords" content="corporate, template, html5, css3, jQuery, themeforest, responsive, business">
+  <meta name="author" content="harmonikas996 (http://www.lukacvetinovic.com)">
+
+  
+	<!-- CSS - "css/foundation.css" is default -->
+	<link rel="stylesheet" href="css/foundation.css">
+
+	<!-- Modernizr 2.6.2 -->
+	<script src="js/modernizr.custom.js"></script>
+
+	<!-- Latest jQuery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  
+	<!-- Google font -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+	<!-- FONT AWESOME icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Layer slider -->
+	<link rel="stylesheet" href="js/layerslider/css/layerslider.css" type="text/css">
+		<!--[if lt IE 9]>
+			<script src="../assets/js/html5.js"></script>
+		<![endif]-->
+
+	<!-- Image hover effect -->
+	<link rel="stylesheet" type="text/css" href="css/portfolio/component.css" />
+
+	<!-- Responsive nav -->
+	<script>
+		// Create the dropdown base
+		$("<select />").appendTo("nav");
+
+		// Create default option "Go to..."
+		$("<option />", {
+		   "selected": "selected",
+		   "value"   : "",
+		   "text"    : "Go to..."
+		}).appendTo("nav select");
+
+		// Populate dropdown with menu items
+		$("nav a").each(function() {
+		 var el = $(this);
+		 $("<option />", {
+			 "value"   : el.attr("href"),
+			 "text"    : el.text()
+		 }).appendTo("nav select");
+		});
+    </script>
+
+<!-- Layer slider slide css -->
+<style type="text/css" media="screen">
+
+			.ls-layer,
+			.ls-layer * {
+				font-family: 'Lato', sans-serif;
+				font-weight: 900;
+				text-shadow: none !important;
+			}
+			
+			.ls-s-1 {
+				font-weight: normal;
+			}
+			.text,
+			.text2 {
+				font-size: 26px; 
+			}
+			.blue { color: #3498db; }
+			.red { color: #e74c3c; }
+			.green { color: #2ecc71; }
+			
+			.h1 {
+				color: #fff;
+				font-size: 26px;
+				font-weight: 300;
+				margin: 0 auto;
+				padding: 10px 20px;
+				background: #3F92D2;
+			}
+			.h5 {
+				color: #222;
+				font-size: 18px;
+				font-weight: 300;
+				margin: 0 auto;
+				padding: 10px 20px;
+				background: #fff;
+			}
+		</style>
+
+<!-- SUPERFISH NAVIGATION  -->
+		<link rel="stylesheet" href="js/superfish-nav/dist/css/superfish.css" media="screen">
+		<style> </style>
+		<script src="js/superfish-nav/dist/js/hoverIntent.js"></script>
+		<script src="js/superfish-nav/dist/js/superfish.js"></script>
+		<script>
+
+		(function($){ //create closure so we can safely use $ as alias for jQuery
+
+			$(document).ready(function(){
+
+				// initialise plugin
+				var example = $('#example').superfish({
+					//add options here if required
+				});
+
+				// buttons to demonstrate Superfish's public methods
+				$('.destroy').on('click', function(){
+					example.superfish('destroy');
+				});
+
+				$('.init').on('click', function(){
+					example.superfish();
+				});
+
+				$('.open').on('click', function(){
+					example.children('li:first').superfish('show');
+				});
+
+				$('.close').on('click', function(){
+					example.children('li:first').superfish('hide');
+				});
+			});
+
+		})(jQuery);
+
+
+		</script>
+
+</head>
+<body>
+	<!-- NAVIBAR -->
+	<div class="top_nav no-border">
+	<div class="row">
+	<div class="large-4 columns logo">
+				<span>Arcus</span>
+	</div>
+	<div class="large-8 columns">
+	<nav>
+	<!-- Navigation -->
+	<ul class="sf-menu" id="example">
+			<li class="current">
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="#">Coming Soon</a>
+					<ul>
+						<li><a href="soon.html">First Version</a></li>
+						<li><a href="soon_2.html">Second Version</a></li>
+					</ul>
+			</li>
+			<li>
+				<a href="#">Pages</a>
+					<ul>
+						<li><a href="404.html">404 Not Found Page</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="components.html">All Componenets</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="hosting.html">Hosting Home Page</a></li>
+						<li><a href="hosting_domains.html">Hosting Domain Registration</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="services.html">Services First</a></li>
+						<li><a href="services_2.html">Services Second</a></li>
+					</ul>
+			</li>
+			<li>
+				<a href="#">Blog</a>
+					<ul>
+						<li><a href="blog.html">Blog Right Navigation</a></li>
+						<li><a href="blog_left_nav.html">Blog Left Navigation</a></li>
+						<li><a href="blog_single.html">Blog Single Post</a></li>
+					</ul>
+			</li>
+			<li id="nav_button"><a target="_blank" href="lukacvetinovic.com">Support</a></li>
+	</ul><!-- end of Navigation -->
+		<!-- Navigation on Mobile Devices -->
+				<select> 
+					<option value="#" selected="selected">Menu</option> 
+					<option value="index.html">Home</option> 
+					<option value="#">Coming Soon</option>
+						<option value="soon.html">-- First Version</option>
+						<option value="soon_2.html">-- Second Version</option>
+					<option value="#">Pages</option>
+						<option value="404.html">-- 404 Not Found Page</option>
+						<option value="about.html">-- About</option>
+						<option value="components.html">-- All Components</option>
+						<option value="contact.html">-- Contact</option>
+						<option value="hosting.html">-- Hosting Home Page</option>
+						<option value="hosting_domains.html">-- Hosting Domain Registration</option>
+						<option value="portfolio.html">-- Portfolio</option>
+						<option value="services.html">-- Services First</option>
+						<option value="services_2.html">-- Services Second</option>
+					<option value="#">Blog</option>
+						<option value="blog.html">-- Blog Right Navigation</option>
+						<option value="blog_left_nav.html">-- Blog Left Navigation</option>
+						<option value="blog_single.html">-- Blog Single Post</option>
+					<option value="lukacvetinovic.com">Support</option>
+				</select>
+		<!-- end of Navigation on Mobile Devices -->
+	</nav>
+	</div>
+	</div>
+	</div>
+	<!-- end of NAVIBAR -->
+	<!-- SLIDER -->
+	<div id="layerslider-container-fw">
+			
+			<div id="layerslider" style="width: 100%; height: 450px; margin: 0px auto; ">
+
+				<div class="ls-layer" style="slidedirection: right; transition2d: 92,93,105; ">
+
+					<img src="assets/img/arcus_hosting_2.png" class="ls-bg" alt="Slide background">
+					<h1 class="ls-s-1 h1" style=" top:178px; left: 0px; slidedirection : top; slideoutdirection : fade; durationout : 1000; easingin : easeOutQuint; delayin : 200; scalein : .1; scaleout : .8; ">Register your name on the internet.</h1>
+					<h5 class="ls-s-1 h5" style=" top:230px; left: 0px; slidedirection : right; slideoutdirection : fade; durationout : 1000; easingin : easeOutQuint; delayin : 200; scalein : .1; scaleout : .8; ">Choose one of the popular domains.</h5>
+				</div>
+
+			</div>
+						
+		</div>
+	<!-- end of SLIDER -->
+	<!-- SERVICES -->
+	<div class="row arcus-content">
+	<div class="large-12 columns big-h to-center">
+		<h3>Want to register domain for your business?</h3>
+		<h5 class="subheader">First, check availability of domain!</h5>
+		<input id="search-box" type="text" value="" placeholder="Search">
+	</div>
+	</div>
+	<div class="row">
+		<div class="large-12 columns big-h">
+		<table class="basic optimized-button">
+				  <thead>
+					<tr>
+					  <th width="100">TLD</th>
+					  <th width="400">The minimum registration period (years)</th>
+					  <th width="200">Price (for 1 year)</th>
+					  <th width="200">Transfer</th>
+					  <th width="200">Renewal</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>.COM</td>
+					  <td>1</td>
+					  <td>12$</td>
+					  <td>10$</td>
+					  <td>14$</td>
+					</tr>
+					<tr>
+					  <td>.NET</td>
+					  <td>1</td>
+					  <td>10$</td>
+					  <td>8$</td>
+					  <td>12$</td>
+					</tr>
+					<tr>
+					  <td>.ORG</td>
+					  <td>1</td>
+					  <td>12$</td>
+					  <td>10$</td>
+					  <td>14$</td>
+					</tr>
+					<tr>
+					  <td>.INFO</td>
+					  <td>2</td>
+					  <td>6$</td>
+					  <td>4$</td>
+					  <td>10$</td>
+					</tr>
+					<tr>
+					  <td>.BIZ</td>
+					  <td>2</td>
+					  <td>7$</td>
+					  <td>5$</td>
+					  <td>11$</td>
+					</tr>
+					<tr>
+					  <td>.ME</td>
+					  <td>1</td>
+					  <td>10$</td>
+					  <td>8$</td>
+					  <td>14$</td>
+					</tr>
+					<tr>
+					  <td>.TV</td>
+					  <td>1</td>
+					  <td>12$</td>
+					  <td>10$</td>
+					  <td>14$</td>
+					</tr>
+					<tr>
+					  <td>.US</td>
+					  <td>1</td>
+					  <td>6$</td>
+					  <td>4$</td>
+					  <td>10$</td>
+					</tr>
+					<tr>
+					  <td>.SHOP</td>
+					  <td>1</td>
+					  <td>16$</td>
+					  <td>14$</td>
+					  <td>20$</td>
+					</tr>
+				  </tbody>
+				</table>
+		</div>
+	</div>
+	<!-- end of SERVICES -->
+	<!-- 24/6 Support, Get more from your website... , Newsletter -->
+	<div class="row arcus-content">
+	<div class="large-12 columns big-h">
+		<!-- Services -->
+				<div class="row services-i-2">
+					<div class="large-3 columns optimized">
+					<i class="icon-phone"></i><span>24/7 Support</span>
+					<p>We've helped millions of people create a successful online business.</p>
+					</div>
+					<div class="large-3 columns optimized">
+					<i class="icon-signal"></i><span>Better Page Rank</span>
+					<p>Boost your business, productivity and security.</p>
+					</div>
+					<div class="large-3 columns optimized">
+					<i class="icon-dollar"></i><span>Secure online payments</span>
+					<p>Keep customer information safe with an SSL Certificate.</p>
+					</div>
+					<div class="large-3 columns optimized">
+					<i class="icon-search"></i><span>Improve search rankings</span>
+					<p>Get your business listed higher on Google, Yahoo! and Bing.</p>
+					</div>
+				</div>
+		<!-- end of Services-->
+	</div>
+	</div>
+	<!-- end of 24/6 Support, Get more from your website... , Newsletter -->
+	<!-- Footer_big -->
+	<div class="footer_big arcus-content">
+		<div class="row">
+			<div class="large-3 columns responsive_space">
+			<h3>Arcus</h3>
+			<div class="decorative-line"></div>
+			<p>Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scriptaset patrioque scribentur, at pro fugit erts verterem molestiae, sed et vivendo ali Lorem ipsum ex vix illud nonummy</p>
+			</div>
+			<div class="large-3 columns responsive_space">
+			<h3>Partners</h3>
+			<div class="decorative-line"></div>
+				<ul>
+				  <li><a href="#top">Lorem Ipsum is simply</a></li>
+				  <li><a href="#features">Dummy text of the printing</a></li>
+				  <li><a href="#portfolio">And typesetting industry</a></li>
+				  <li><a href="#team">Lorem Ipsum has been</a></li>
+				</ul>
+			</div>
+			<div class="large-3 columns responsive_space">
+			<h3>Newsletter</h3>
+			<div class="decorative-line"></div>
+			<p>Get notices about our new releases! Special Offers and more...</p>
+			<a class="button footer-button" href="#">Sign Up</a>
+			</div>
+			<div class="large-3 columns responsive_space">
+			<h3>Promotion</h3>
+			<div class="decorative-line"></div>
+			<a target="_blank" href="http://themeforest.net/?ref=harmonikas996"><img src="img/add1.gif"></img></a>
+			</div>
+		</div>
+	</div>
+	<!-- end of Footer_big -->
+	<!-- Footer_small -->
+	<div class="footer_small">
+		<div class="row">
+			<div class="footer_small_copyright copyright_mobile">
+				<div class="large-6 columns">
+				<p>&#169; Arcus - harmonikas996. All Rights Reserved!</p>
+				</div>
+			</div>
+			<div class="footer_small_social to-right">
+			<div class="large-6 columns">
+			<a target="_blank" href="#"><i class="icon-facebook"></i></a>
+			<a target="_blank" href="#"><i class="icon-twitter"></i></a>
+			<a target="_blank" href="#"><i class="icon-dribbble"></i></a>
+			<a target="_blank" href="#"><i class="icon-linkedin"></i></a>
+			<a target="_blank" href="#"><i class="icon-pinterest"></i></a>
+			</div>
+			</div>
+		</div>
+	</div><!-- end of Footer_small -->
+		
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation.min.js"></script>
+  <!--
+  
+  <script src="js/foundation/foundation.js"></script>
+  
+  <script src="js/foundation/foundation.alerts.js"></script>
+  
+  <script src="js/foundation/foundation.clearing.js"></script>
+  
+  <script src="js/foundation/foundation.cookie.js"></script>
+  
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  
+  <script src="js/foundation/foundation.forms.js"></script>
+  
+  <script src="js/foundation/foundation.joyride.js"></script>
+  
+  <script src="js/foundation/foundation.magellan.js"></script>
+  
+  <script src="js/foundation/foundation.orbit.js"></script>
+  
+  <script src="js/foundation/foundation.reveal.js"></script>
+  
+  <script src="js/foundation/foundation.section.js"></script>
+  
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  
+  <script src="js/foundation/foundation.topbar.js"></script>
+  
+  <script src="js/foundation/foundation.interchange.js"></script>
+  
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  
+  <script src="js/foundation/foundation.abide.js"></script>
+  
+  -->
+  
+  <script>
+    $(document).foundation();
+  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/grid.js"></script>
+		<script>
+			$(function() {
+				Grid.init();
+			});
+		</script>
+  <script src="js/vendor/custom.modernizr.js"></script>
+  
+  <!-- Responsive nav -->
+    <script>
+  $("nav select").change(function() {
+  window.location = $(this).find("option:selected").val();
+  });
+  </script>
+
+  <!-- Layer slider -->
+  <script type="text/javascript"></script>
+		<script src="js/layerslider/jQuery/jquery-easing-1.3.js" type="text/javascript"></script>
+		<script src="js/layerslider/jQuery/jquery-transit-modified.js" type="text/javascript"></script>
+		<script src="js/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+		<script src="js/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#layerslider').layerSlider({
+					skinsPath : 'js/layerslider/skins/',
+					skin : 'fullwidth',
+					thumbnailNavigation : 'hover',
+					hoverPrevNext : false,
+					responsive : false,
+					responsiveUnder : 960,
+					sublayerContainer : 960
+				});
+			});		
+		</script>	
+</body>
+</html>

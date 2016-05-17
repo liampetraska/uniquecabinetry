@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
+	<title>Unique Cabinetry - Custom Cabinets Made in Michigan</title>
+  <meta name="description" content="Arcus is Responsive Business Template, crafted with Foundation framwork with HTML5, CSS3 and jQuery.">
+  <meta name="keywords" content="corporate, template, html5, css3, jQuery, themeforest, responsive, business">
+  <meta name="author" content="harmonikas996 (http://www.lukacvetinovic.com)">
+
+
+	<!-- CSS - "css/foundation.css" is default -->
+	<link rel="stylesheet" href="css/green.css">
+
+	<!-- Modernizr 2.6.2 -->
+	<script src="js/modernizr.custom.js"></script>
+
+	<!-- Latest jQuery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Google font -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+	<!-- FONT AWESOME icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Image hover effect -->
+	<link rel="stylesheet" type="text/css" href="css/portfolio/component.css" />
+
+	<!-- Responsive nav -->
+	<script>
+		// Create the dropdown base
+		$("<select />").appendTo("nav");
+
+		// Create default option "Go to..."
+		$("<option />", {
+		   "selected": "selected",
+		   "value"   : "",
+		   "text"    : "Go to..."
+		}).appendTo("nav select");
+
+		// Populate dropdown with menu items
+		$("nav a").each(function() {
+		 var el = $(this);
+		 $("<option />", {
+			 "value"   : el.attr("href"),
+			 "text"    : el.text()
+		 }).appendTo("nav select");
+		});
+    </script>
+
+<!-- SUPERFISH NAVIGATION  -->
+		<link rel="stylesheet" href="js/superfish-nav/dist/css/superfish.css" media="screen">
+		<style> </style>
+		<script src="js/superfish-nav/dist/js/hoverIntent.js"></script>
+		<script src="js/superfish-nav/dist/js/superfish.js"></script>
+		<script>
+
+		(function($){ //create closure so we can safely use $ as alias for jQuery
+
+			$(document).ready(function(){
+
+				// initialise plugin
+				var example = $('#example').superfish({
+					//add options here if required
+				});
+
+				// buttons to demonstrate Superfish's public methods
+				$('.destroy').on('click', function(){
+					example.superfish('destroy');
+				});
+
+				$('.init').on('click', function(){
+					example.superfish();
+				});
+
+				$('.open').on('click', function(){
+					example.children('li:first').superfish('show');
+				});
+
+				$('.close').on('click', function(){
+					example.children('li:first').superfish('hide');
+				});
+			});
+
+		})(jQuery);
+
+
+		</script>
+
+</head>
+<body>
+		<!-- NAVIBAR -->
+	<div class="top_nav no-border">
+	<div class="row">
+	<div class="large-4 columns logo">
+		<span><img src="img/logo.png"></span>
+	</div>
+	<div class="large-8 columns">
+	<nav>
+	<!-- Navigation -->
+	<ul class="sf-menu" id="example">
+		<li class="current">
+			<a href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="#">Products</a>
+			<ul>
+				<li><a href="cabinets.html">Cabinet Construction</a></li>
+				<li id="nav_button"><a href="door_styles.html">Door Styles</a></li>
+				<li><a href="moldings.html">Moldings</a></li>
+				<li><a href="accessories.html">Accessories</a></li>
+			</ul>
+		</li>
+		<li class="current">
+			<a href="about.html">About Unique</a>
+		</li>
+		<li class="current">
+			<a href="dealers.html">Find a Dealer</a>
+		</li>
+		<li>
+			<a href="#">Dealer Login</a>
+		</li>
+	</ul><!-- end of Navigation -->
+	<!-- Navigation on Mobile Devices -->
+	<select>
+		<option value="#" selected="selected">Menu</option>
+		<option value="index.html">Home</option>
+		<option value="#">Products</option>
+		<option value="cabinets.html">-- Cabinet Construction</option>
+		<option value="door_styles.html">-- Door Styles</option>
+		<option value="moldings.html">-- Moldings</option>
+		<option value="accessories.html">-- Accessories</option>
+		<option value="about.html">About Unique</option>
+		<option value="dealers.html">Find a Dealer</option>
+		<option value="#.html">Dealer Login</option>
+	</select>
+	<!-- end of Navigation on Mobile Devices -->
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!-- end of NAVIBAR -->
+	<!-- Call-To-Action 2 -->
+	<div id="portfolio" class="cta_2 divider-2">
+		<!-- SHOWCASE HEADING -->
+			<div class="row">
+				<div class="large-12 columns big-h to-center">
+				<h1>The Unique Cabinetry Line</h1>
+				<h5 class="subheader">Classic, Contemporary, Modern</h5>
+				</div>
+			</div><!-- end of SHOWCASE HEADING -->
+		<!-- SHOWCASE -->
+		<div class="row">
+			<div class="large-12 columns">
+				<ul id="og-grid" class="og-grid">
+					<li>
+						<a href="#" data-largesrc="img/door_styles/1.jpg" data-title="Ontario" data-subtitle="3/4 Solid Raised Panel" data-description="Description text here but what all can go here">
+							<img src="img/door_styles/1_small.jpg" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/2_XL.jpg"  data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/door_styles/2_small.jpg" alt="img02"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/3_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/door_styles/3_small.jpg" alt="img03"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/4_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/door_styles/2_small.jpg" alt="img04"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/5_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/door_styles/3_small.jpg" alt="img05"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/4_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/4.jpg" alt="img04"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/6_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/6.jpg" alt="img06"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/5_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/5.jpg" alt="img05"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/2_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/2.jpg" alt="img02"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/1_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/1.jpg" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/door_styles/1.jpg" data-title="Ontario" data-subtitle="3/4 Solid Raised Panel" data-description="Description text here but what all can go here">
+							<img src="img/door_styles/1_small.jpg" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/2_XL.jpg"  data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/door_styles/2_small.jpg" alt="img02"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/3_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/door_styles/3_small.jpg" alt="img03"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/4_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/4.jpg" alt="img04"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/5_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/5.jpg" alt="img05"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/4_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/4.jpg" alt="img04"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/6_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/6.jpg" alt="img06"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/5_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/5.jpg" alt="img05"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/2_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/2.jpg" alt="img02"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/1_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/1.jpg" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/4_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/4.jpg" alt="img04"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/6_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/6.jpg" alt="img06"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/5_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/5.jpg" alt="img05"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/2_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/2.jpg" alt="img02"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="img/thumbs/1_XL.jpg" data-title="Heading" data-subtitle="Subheading" data-description="Description text here">
+							<img src="img/thumbs/1.jpg" alt="img01"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- end of SHOWCASE -->
+	</div>
+	<!-- end of Call-To-Action 2 -->
+	<div class="row arcus-content">
+		<div class="large-12 columns big-h to-center">
+		<h1>Testimonials</h1>
+		<h5 class="subheader">Let our clients speak for us!</h1>
+		</div>
+		<div class="large-4 columns">
+		<blockquote class="medium">Unique is super awesome and incredible!<cite>Katie Paris</cite></blockquote>
+		</div>
+		<div class="large-4 columns">
+		<blockquote class="medium">Unique is super awesome and incredible!<cite>Trisha Kindley</cite></blockquote>
+		</div>
+		<div class="large-4 columns">
+		<blockquote class="medium">Unique is super awesome and incredible!<cite>Mark Fisk</cite></blockquote>
+		</div>
+	</div>
+	<!-- Testimonials -->
+	<!-- Footer_small -->
+	<div class="footer_small">
+		<div class="row">
+			<div class="footer_small_copyright copyright_mobile">
+				<div class="large-6 columns">
+					<p>&#169; 2015 Unique Cabinetry LLC. All Rights Reserved!</p>
+				</div>
+			</div>
+			<div class="footer_small_social to-right">
+				<div class="large-6 columns">
+					<a target="_blank" href="#"><i class="icon-facebook"></i></a>
+					<a target="_blank" href="#"><i class="icon-pinterest"></i></a>
+				</div>
+			</div>
+		</div>
+	</div><!-- end of Footer_small -->
+
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+
+  <script src="js/foundation.min.js"></script>
+  <!--
+
+  <script src="js/foundation/foundation.js"></script>
+
+  <script src="js/foundation/foundation.alerts.js"></script>
+
+  <script src="js/foundation/foundation.clearing.js"></script>
+
+  <script src="js/foundation/foundation.cookie.js"></script>
+
+  <script src="js/foundation/foundation.dropdown.js"></script>
+
+  <script src="js/foundation/foundation.forms.js"></script>
+
+  <script src="js/foundation/foundation.joyride.js"></script>
+
+  <script src="js/foundation/foundation.magellan.js"></script>
+
+  <script src="js/foundation/foundation.orbit.js"></script>
+
+  <script src="js/foundation/foundation.reveal.js"></script>
+
+  <script src="js/foundation/foundation.section.js"></script>
+
+  <script src="js/foundation/foundation.tooltips.js"></script>
+
+  <script src="js/foundation/foundation.topbar.js"></script>
+
+  <script src="js/foundation/foundation.interchange.js"></script>
+
+  <script src="js/foundation/foundation.placeholder.js"></script>
+
+  <script src="js/foundation/foundation.abide.js"></script>
+
+  -->
+
+  <script>
+    $(document).foundation();
+  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/grid.js"></script>
+		<script>
+			$(function() {
+				Grid.init();
+			});
+		</script>
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+  <!-- Responsive nav -->
+    <script>
+  $("nav select").change(function() {
+  window.location = $(this).find("option:selected").val();
+  });
+  </script>
+</body>
+</html>

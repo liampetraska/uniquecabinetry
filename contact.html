@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
+	<title>Unique Cabinetry - Custom Cabinets Made in Michigan</title>
+  <meta name="description" content="Arcus is Responsive Business Template, crafted with Foundation framwork with HTML5, CSS3 and jQuery.">
+  <meta name="keywords" content="corporate, template, html5, css3, jQuery, themeforest, responsive, business">
+  <meta name="author" content="harmonikas996 (http://www.lukacvetinovic.com)">
+
+	<!-- CSS - "css/foundation.css" is default -->
+	<link rel="stylesheet" href="css/green.css">
+
+	<!-- Modernizr 2.6.2 -->
+	<script src="js/modernizr.custom.js"></script>
+
+	<!-- Latest jQuery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- FancyBox -->
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+		</script>
+
+	<!-- Google font -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+	<!-- FONT AWESOME icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Responsive nav -->
+	<script>
+		// Create the dropdown base
+		$("<select />").appendTo("nav");
+
+		// Create default option "Go to..."
+		$("<option />", {
+		   "selected": "selected",
+		   "value"   : "",
+		   "text"    : "Go to..."
+		}).appendTo("nav select");
+
+		// Populate dropdown with menu items
+		$("nav a").each(function() {
+		 var el = $(this);
+		 $("<option />", {
+			 "value"   : el.attr("href"),
+			 "text"    : el.text()
+		 }).appendTo("nav select");
+		});
+    </script>
+
+<!-- SUPERFISH NAVIGATION  -->
+		<link rel="stylesheet" href="js/superfish-nav/dist/css/superfish.css" media="screen">
+		<style> </style>
+		<script src="js/superfish-nav/dist/js/hoverIntent.js"></script>
+		<script src="js/superfish-nav/dist/js/superfish.js"></script>
+		<script>
+
+		(function($){ //create closure so we can safely use $ as alias for jQuery
+
+			$(document).ready(function(){
+
+				// initialise plugin
+				var example = $('#example').superfish({
+					//add options here if required
+				});
+
+				// buttons to demonstrate Superfish's public methods
+				$('.destroy').on('click', function(){
+					example.superfish('destroy');
+				});
+
+				$('.init').on('click', function(){
+					example.superfish();
+				});
+
+				$('.open').on('click', function(){
+					example.children('li:first').superfish('show');
+				});
+
+				$('.close').on('click', function(){
+					example.children('li:first').superfish('hide');
+				});
+			});
+
+		})(jQuery);
+
+
+		</script>
+
+<!-- Google Maps -->
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+  <script>
+	function initialize()
+	{
+	var mapProp = {
+    center: new google.maps.LatLng(42.579203,-84.443584),
+    zoom:6,
+    panControl:false,
+    zoomControl:true,
+    zoomControlOptions: {
+      style:google.maps.ZoomControlStyle.SMALL
+    },
+    mapTypeControl:false,
+	mapTypeControlOptions: {
+      style:google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+    scaleControl:true,
+    streetViewControl:false,
+    overviewMapControl:false,
+    rotateControl:false,
+    zoomControl: true,
+	scaleControl: false,
+	scrollwheel: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+</head>
+<body>
+	<!-- NAVIBAR -->
+	<div class="top_nav no-border">
+	<div class="row">
+	<div class="large-4 columns logo">
+		<span><img src="img/logo.png"></span>
+	</div>
+	<div class="large-8 columns">
+	<nav>
+	<!-- Navigation -->
+	<ul class="sf-menu" id="example">
+		<li class="current">
+			<a href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="#">Products</a>
+			<ul>
+				<li><a href="cabinets.html">Cabinet Construction</a></li>
+				<li><a href="door_styles.html">Door Styles</a></li>
+				<li><a href="moldings.html">Moldings</a></li>
+				<li><a href="accessories.html">Accessories</a></li>
+			</ul>
+		</li>
+		<li class="current">
+			<a href="about.html">About Unique</a>
+		</li>
+		<li class="current">
+			<a href="dealers.html">Find a Dealer</a>
+		</li>
+		<li>
+			<a href="#">Dealer Login</a>
+		</li>
+	</ul><!-- end of Navigation -->
+	<!-- Navigation on Mobile Devices -->
+	<select>
+		<option value="#" selected="selected">Menu</option>
+		<option value="index.html">Home</option>
+		<option value="#">Products</option>
+		<option value="cabinets.html">-- Cabinet Construction</option>
+		<option value="door_styles.html">-- Door Styles</option>
+		<option value="moldings.html">-- Moldings</option>
+		<option value="accessories.html">-- Accessories</option>
+		<option value="about.html">About Unique</option>
+		<option value="dealers.html">Find a Dealer</option>
+		<option value="#.html">Dealer Login</option>
+	</select>
+	<!-- end of Navigation on Mobile Devices -->
+  </nav>
+	</div>
+	</div>
+	</div>
+	<!-- end of NAVIBAR -->
+	<!-- Google Maps -->
+		<div id="googleMap" style="wdith: 100%; height: 360px"></div>
+		<!-- Google Maps  -->
+	<!-- ABOUT -->
+	<div class="arcus-content">
+		<div class="row">
+		<div class="large-8 columns responsive_space">
+			<div class="medium-h to-left">
+				<h3>Contact Unique Cabinetry</h3>
+				<h5 class="subheader">By Phone</h5>
+				<p>(517) 676-4770</p>
+				<h5 class="subheader">By Mail</h5>
+				<p>Unique Cabinetry, LLC<br>
+					4200 Legion Drive<br>
+					Mason, MI 48854</p>
+				
+			<br>
+			<br>
+			<div class="medium-h to-left">
+				<h3>Common Questions</h3>
+				<h5 class="subheader">Check out these resources as well for support:</h5>
+			</div>
+				<ul>
+				<li class="li-2">Getting Ready for Your Design Conference</li>
+				<li class="li-2">Measurement Documents and Walkthrough</li>
+				<li class="li-2">Limited Lifetime Warranty</li>
+				<li class="li-2">Join.me Support and Tutorial</li>
+				<li class="li-2">How To Use Your Idea Book</li>
+				</ul>
+			</div>
+		</div>
+		<div class="large-4 columns">
+		<!-- CONTACT FORM -->
+<form class="form-contact" name="contactform" method="post" action="php/send_form_email.php">
+<div class="medium-h">
+<h3>Contant us</h3>
+<h5 class="subheader">A Unique Customer Representative will contact you within 24 hours.</h5>
+<p>
+	Looking for Dealer Support? Click here
+</p>
+</div>
+<div><label for="first_name"><input style="height: 40px;" name="first_name" placeholder="First name" type="text" tabindex="1" required=""  /></label></div>
+<div><label for="last_name"><input style="height: 40px;" name="last_name" placeholder="Last name" type="text" tabindex="1" required=""  /></label></div>
+<div><label for="email"><input style="height: 40px;" name="email" placeholder="Your Email" type="text" tabindex="1" required=""  /></label></div>
+<div><label for="website"><input style="height: 40px;" name="website" placeholder="Website" type="text" tabindex="1" required=""  /></label></div>
+<div><label for="comments"><textarea style="height: 140px; resize: none;" name="comments" placeholder="Your text message" tabindex="5" required=""></textarea></label></div>
+<div>
+<button name="submit" type="submit" id="contact-submit">Send Email</button></div></form>
+<!-- end of CONTACT FORM -->
+		</div>
+		</div>
+	</div>
+	<!-- end of ABOUT -->
+	<!-- Footer_small -->
+	<div class="footer_small">
+		<div class="row">
+			<div class="footer_small_copyright copyright_mobile">
+				<div class="large-6 columns">
+					<p>&#169; 2015 Unique Cabinetry LLC. All Rights Reserved!</p>
+				</div>
+			</div>
+			<div class="footer_small_social to-right">
+				<div class="large-6 columns">
+					<a target="_blank" href="#"><i class="icon-facebook"></i></a>
+					<a target="_blank" href="#"><i class="icon-pinterest"></i></a>
+				</div>
+			</div>
+		</div>
+	</div><!-- end of Footer_small -->
+
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+
+  <script src="js/foundation.min.js"></script>
+  <!--
+
+  <script src="js/foundation/foundation.js"></script>
+
+  <script src="js/foundation/foundation.alerts.js"></script>
+
+  <script src="js/foundation/foundation.clearing.js"></script>
+
+  <script src="js/foundation/foundation.cookie.js"></script>
+
+  <script src="js/foundation/foundation.dropdown.js"></script>
+
+  <script src="js/foundation/foundation.forms.js"></script>
+
+  <script src="js/foundation/foundation.joyride.js"></script>
+
+  <script src="js/foundation/foundation.magellan.js"></script>
+
+  <script src="js/foundation/foundation.orbit.js"></script>
+
+  <script src="js/foundation/foundation.reveal.js"></script>
+
+  <script src="js/foundation/foundation.section.js"></script>
+
+  <script src="js/foundation/foundation.tooltips.js"></script>
+
+  <script src="js/foundation/foundation.topbar.js"></script>
+
+  <script src="js/foundation/foundation.interchange.js"></script>
+
+  <script src="js/foundation/foundation.placeholder.js"></script>
+
+  <script src="js/foundation/foundation.abide.js"></script>
+
+  -->
+
+  <script>
+    $(document).foundation();
+  </script>
+
+  <!-- Responsive nav -->
+    <script>
+  $("nav select").change(function() {
+  window.location = $(this).find("option:selected").val();
+  });
+  </script>
+  <!-- end of Responsive nav -->
+</body>
+</html>

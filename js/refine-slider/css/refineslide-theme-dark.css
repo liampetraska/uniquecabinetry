@@ -1,0 +1,100 @@
+/*
+ * jQuery RefineSlide plugin v0.3
+ * Copyright 2012, Alex Dunphy
+ * MIT License (http://www.opensource.org/licenses/mit-license.php)
+ *
+ * Dark theme
+ */
+
+.rs-slide-bg {
+
+}
+
+.rs-slider > li {
+
+}
+
+    .rs-slider > li img {
+
+    }
+
+/* ===[ Thumbnails ]=== */
+
+.rs-thumb-wrap { margin: 21px 0 0 }
+
+    .rs-thumb-wrap > a {
+        opacity: .7;
+        *padding: 0;
+        -moz-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out;
+    }
+
+        .rs-thumb-wrap > a > img {
+
+        }
+
+    .rs-thumb-wrap > a:hover,
+    .rs-thumb-wrap > a.active { opacity: 1 }
+
+    .rs-thumb-wrap > a:first-child { margin-left: 0!important }
+
+
+/* ===[ Captions ]=== */
+
+.rs-caption {
+    padding: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, .6);
+}
+
+    .rs-caption p {
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+.rs-caption.rs-top-left {
+    border-top: none;
+    border-left: none;
+}
+
+.rs-caption.rs-bottom-right {
+    border-bottom: none;
+    border-right: none;
+}
+
+.rs-caption.rs-top-right {
+    border-top: none;
+    border-right: none;
+}
+
+.rs-caption.rs-bottom-left {
+    border-bottom: none;
+    border-left: none;
+}
+
+.rs-caption.rs-bottom {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.rs-caption.rs-top {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.rs-caption.rs-left {
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.rs-caption.rs-right {
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}

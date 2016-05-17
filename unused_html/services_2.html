@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
+  <title>Services | Arcus - Responsive Business Template</title>
+  <meta name="description" content="Arcus is Responsive Business Template, crafted with Foundation framwork with HTML5, CSS3 and jQuery.">
+  <meta name="keywords" content="corporate, template, html5, css3, jQuery, themeforest, responsive, business">
+  <meta name="author" content="harmonikas996 (http://www.lukacvetinovic.com)">
+
+  
+	 <!-- CSS - "css/foundation.css" is default -->
+	<link rel="stylesheet" href="css/foundation.css">
+
+	<!-- Modernizr 2.6.2 -->
+	<script src="js/modernizr.custom.js"></script>
+
+	<!-- Latest jQuery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<!-- Fancybox -->
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+		</script>
+
+	<!-- Google font -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+	<!-- FONT AWESOME icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- OWL CAROUSEL -->
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="js/owl-carousel/owl-carousel/owl.carousel.css">
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="js/owl-carousel/owl-carousel/owl.theme.css">
+	<!-- Include js plugin -->
+	<script src="js/owl-carousel/owl-carousel/owl.carousel.js"></script>
+	<!-- end of OWL CAROUSEL -->
+
+	<!-- Responsive nav -->
+	<script>
+		// Create the dropdown base
+		$("<select />").appendTo("nav");
+
+		// Create default option "Go to..."
+		$("<option />", {
+		   "selected": "selected",
+		   "value"   : "",
+		   "text"    : "Go to..."
+		}).appendTo("nav select");
+
+		// Populate dropdown with menu items
+		$("nav a").each(function() {
+		 var el = $(this);
+		 $("<option />", {
+			 "value"   : el.attr("href"),
+			 "text"    : el.text()
+		 }).appendTo("nav select");
+		});
+    </script>
+
+<!-- SUPERFISH NAVIGATION  -->
+		<link rel="stylesheet" href="js/superfish-nav/dist/css/superfish.css" media="screen">
+		<style> </style>
+		<script src="js/superfish-nav/dist/js/hoverIntent.js"></script>
+		<script src="js/superfish-nav/dist/js/superfish.js"></script>
+		<script>
+
+		(function($){ //create closure so we can safely use $ as alias for jQuery
+
+			$(document).ready(function(){
+
+				// initialise plugin
+				var example = $('#example').superfish({
+					//add options here if required
+				});
+
+				// buttons to demonstrate Superfish's public methods
+				$('.destroy').on('click', function(){
+					example.superfish('destroy');
+				});
+
+				$('.init').on('click', function(){
+					example.superfish();
+				});
+
+				$('.open').on('click', function(){
+					example.children('li:first').superfish('show');
+				});
+
+				$('.close').on('click', function(){
+					example.children('li:first').superfish('hide');
+				});
+			});
+
+		})(jQuery);
+
+
+		</script>
+		<!-- end of SUPERFISH NAVIGATION  -->
+
+		<!-- Refine Slider -->
+	<link rel="stylesheet" href="js/refine-slider/refineslide.css" />
+	<link rel="stylesheet" href="js/refine-slider/css/refineslide-theme-dark.css" />
+
+    <!--[if lt IE 9]>
+        <script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+	<!-- NAVIBAR -->
+	<div class="top_nav">
+	<div class="row">
+	<div class="large-4 columns logo">
+				<span>Arcus</span>
+	</div>
+	<div class="large-8 columns">
+	<nav>
+	<!-- Navigation -->
+	<ul class="sf-menu" id="example">
+			<li class="current">
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="#">Coming Soon</a>
+					<ul>
+						<li><a href="soon.html">First Version</a></li>
+						<li><a href="soon_2.html">Second Version</a></li>
+					</ul>
+			</li>
+			<li>
+				<a href="#">Pages</a>
+					<ul>
+						<li><a href="404.html">404 Not Found Page</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="components.html">All Componenets</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="hosting.html">Hosting Home Page</a></li>
+						<li><a href="hosting_domains.html">Hosting Domain Registration</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="services.html">Services First</a></li>
+						<li><a href="services_2.html">Services Second</a></li>
+					</ul>
+			</li>
+			<li>
+				<a href="#">Blog</a>
+					<ul>
+						<li><a href="blog.html">Blog Right Navigation</a></li>
+						<li><a href="blog_left_nav.html">Blog Left Navigation</a></li>
+						<li><a href="blog_single.html">Blog Single Post</a></li>
+					</ul>
+			</li>
+			<li id="nav_button"><a target="_blank" href="lukacvetinovic.com">Support</a></li>
+	</ul><!-- end of Navigation -->
+		<!-- Navigation on Mobile Devices -->
+				<select> 
+					<option value="#" selected="selected">Menu</option> 
+					<option value="index.html">Home</option> 
+					<option value="#">Coming Soon</option>
+						<option value="soon.html">-- First Version</option>
+						<option value="soon_2.html">-- Second Version</option>
+					<option value="#">Pages</option>
+						<option value="404.html">-- 404 Not Found Page</option>
+						<option value="about.html">-- About</option>
+						<option value="components.html">-- All Components</option>
+						<option value="contact.html">-- Contact</option>
+						<option value="hosting.html">-- Hosting Home Page</option>
+						<option value="hosting_domains.html">-- Hosting Domain Registration</option>
+						<option value="portfolio.html">-- Portfolio</option>
+						<option value="services.html">-- Services First</option>
+						<option value="services_2.html">-- Services Second</option>
+					<option value="#">Blog</option>
+						<option value="blog.html">-- Blog Right Navigation</option>
+						<option value="blog_left_nav.html">-- Blog Left Navigation</option>
+						<option value="blog_single.html">-- Blog Single Post</option>
+					<option value="lukacvetinovic.com">Support</option>
+				</select>
+		<!-- end of Navigation on Mobile Devices -->
+	</nav>
+	</div>
+	</div>
+	</div>
+	<!-- end of NAVIBAR -->
+	<!-- BREADCRUMBS
+	<div class="row">
+		<div class="large-6 columns page-header">
+		<h3>Services</h3>
+		</div>
+		<div class="large-6 columns columns">
+			<ul class="breadcrumbs right breadcrumbs-responsive">
+				<li><a href="#">Home</a></li>
+				<li class="current"><a href="#">Services</a></li>
+			</ul>
+		</div>
+	</div>
+end of BREADCRUMBS -->
+	<!-- ABOUT -->
+	<div class="arcus-content">
+				<!-- Services -->
+		<div class="row arcus-content divider-2">
+				<!-- service 1 -->
+				<div class="large-4 columns hi-icon-effect-3 hi-icon-effect-3a to-center">
+					<a href="#set-5" class="hi-icon hi-icon-locked">Security</a>
+					<div class="service-h">
+					<h3>Security</h3>
+					<h5 class="subheader">Subheader goes here</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dumm</p>
+					</div>
+				</div><!-- end of service 1 -->
+				<!-- service 2 -->
+				<div class="large-4 columns hi-icon-effect-3 hi-icon-effect-3a to-center">
+					<a href="#set-5" class="hi-icon hi-icon-earth">Globe</a>
+					<div class="service-h">
+					<h3>Global</h3>
+					<h5 class="subheader">Subheader goes here</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dumm</p>
+					</div>
+				</div><!-- end of service 3 -->
+				<!-- service 2 -->
+				<div class="large-4 columns hi-icon-effect-3 hi-icon-effect-3a to-center">
+					<a href="#set-5" class="hi-icon hi-icon-star">Favorite</a>
+					<div class="service-h">
+					<h3>Favorite</h3>
+					<h5 class="subheader">Subheader goes here</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dumm</p>
+					</div>
+				</div><!-- end of service 3 -->
+		</div>
+		<!-- end of Services-->
+				<div class="row arcus-content divider-2">
+			<div class="large-4 columns to-left">
+			<div class="medium-h to-left">
+				<h3>Why Arcus?</h3>
+				<h5 class="subheader">Some of Features</h5>
+			</div>
+				<ul>
+				<li class="li-2">Responsive and Flexible</li>
+				<li class="li-2">Well Organized and Commented</li>
+				<li class="li-2">Font Awesome Integrated</li>
+				<li class="li-2">Tons of Possible Option</li>
+				<li class="li-2">Support Forum</li>
+				<li class="li-2">Video Tutorials</li>
+				</ul>
+			</div>
+			<div class="large-8 columns responsive_space">
+			<div class="medium-h to-left">
+				<h3>Speed and Quality</h3>
+				<h5 class="subheader">Quality is not an act, it is a habit.</h5>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+			</div>
+		</div>
+		<!-- CTA -->
+<div class="row arcus-content-big">
+	<!-- REFINE SLIDER -->
+	<div class="large-5 columns">
+				<ul id="images" class="rs-slider">
+				    <li class="group">
+				        <a href="#">
+				            <img src="js/refine-slider/img/1a.png" alt="" />
+				        </a>
+				    </li>
+				    <li class="group">
+				        <a href="#" class="slide-parent">
+				            <img src="js/refine-slider/img/1b.png" alt=""/>
+				        </a>
+				    </li>
+				    <li class="group">
+				        <img src="js/refine-slider/img/1c.png" alt=""/>
+				    </li>
+
+				</ul>
+<!-- /.section-2 -->
+	</div>
+	<!-- end of REFINE SLIDER -->
+	<div class="large-6 large-offset-1 columns big-h optimized">
+	<h1>App Title</h1>
+	<h5 class="subheader">Awesome iOS app</h5>
+	<span class="success label optimized">NEW</span>
+	<p>The template is perfectly adapted to various screen sizes, and its attractive fresh design makes it look great. Resize your browser window to see it in action. All the layouts are built with responsive design in mind. It works well on desktops, tablets, and mobile devices. The template is perfectly adapted to various screen sizes, and its attractive fresh design makes it look great.</p>
+	<a href="#"  class="medium button secondary radius optimized-button"><i id="iconic-secondary" class="icon-apple"></i>iOS Market</a>
+	</div>
+</div>
+<!-- end of CTA -->
+		<div class="row services-i-2 arcus-content">
+			<div class="large-12 columns big-h to-center">
+				<h1>Main Features</h1>
+				<h5 class="subheader">List of template features</h5>
+			</div>
+			<div class="large-3 columns optimized to-left">
+			<i class="icon-leaf"></i><span>Web Design</span>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+			</div>
+			<div class="large-3 columns optimized to-left">
+			<i class="icon-cog"></i><span>Development</span>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+			</div>
+			<div class="large-3 columns optimized to-left">
+			<i class="icon-rocket"></i><span>SEO</span>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+			</div>
+			<div class="large-3 columns optimized to-left">
+			<i class="icon-star"></i><span>Rate</span>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+			</div>
+		</div>
+	</div>
+	<!-- end of ABOUT -->
+	<!-- Footer_big -->
+	<div class="footer_big arcus-content">
+		<div class="row">
+			<div class="large-3 columns responsive_space">
+			<h3>Arcus</h3>
+			<div class="decorative-line"></div>
+			<p>Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scriptaset patrioque scribentur, at pro fugit erts verterem molestiae, sed et vivendo ali Lorem ipsum ex vix illud nonummy</p>
+			</div>
+			<div class="large-3 columns responsive_space">
+			<h3>Partners</h3>
+			<div class="decorative-line"></div>
+				<ul>
+				  <li><a href="#top">Lorem Ipsum is simply</a></li>
+				  <li><a href="#features">Dummy text of the printing</a></li>
+				  <li><a href="#portfolio">And typesetting industry</a></li>
+				  <li><a href="#team">Lorem Ipsum has been</a></li>
+				</ul>
+			</div>
+			<div class="large-3 columns responsive_space">
+			<h3>Newsletter</h3>
+			<div class="decorative-line"></div>
+			<p>Get notices about our new releases! Special Offers and more...</p>
+			<a class="button footer-button" href="#">Sign Up</a>
+			</div>
+			<div class="large-3 columns responsive_space">
+			<h3>Promotion</h3>
+			<div class="decorative-line"></div>
+			<a target="_blank" href="http://themeforest.net/?ref=harmonikas996"><img src="img/add1.gif"></img></a>
+			</div>
+		</div>
+	</div>
+	<!-- end of Footer_big -->
+	<!-- Footer_small -->
+	<div class="footer_small">
+		<div class="row">
+			<div class="footer_small_copyright copyright_mobile">
+				<div class="large-6 columns">
+				<p>&#169; Arcus - harmonikas996. All Rights Reserved!</p>
+				</div>
+			</div>
+			<div class="footer_small_social to-right">
+			<div class="large-6 columns">
+			<a target="_blank" href="#"><i class="icon-facebook"></i></a>
+			<a target="_blank" href="#"><i class="icon-twitter"></i></a>
+			<a target="_blank" href="#"><i class="icon-dribbble"></i></a>
+			<a target="_blank" href="#"><i class="icon-linkedin"></i></a>
+			<a target="_blank" href="#"><i class="icon-pinterest"></i></a>
+			</div>
+			</div>
+		</div>
+	</div><!-- end of Footer_small -->
+		
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation.min.js"></script>
+  <!--
+  
+  <script src="js/foundation/foundation.js"></script>
+  
+  <script src="js/foundation/foundation.alerts.js"></script>
+  
+  <script src="js/foundation/foundation.clearing.js"></script>
+  
+  <script src="js/foundation/foundation.cookie.js"></script>
+  
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  
+  <script src="js/foundation/foundation.forms.js"></script>
+  
+  <script src="js/foundation/foundation.joyride.js"></script>
+  
+  <script src="js/foundation/foundation.magellan.js"></script>
+  
+  <script src="js/foundation/foundation.orbit.js"></script>
+  
+  <script src="js/foundation/foundation.reveal.js"></script>
+  
+  <script src="js/foundation/foundation.section.js"></script>
+  
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  
+  <script src="js/foundation/foundation.topbar.js"></script>
+  
+  <script src="js/foundation/foundation.interchange.js"></script>
+  
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  
+  <script src="js/foundation/foundation.abide.js"></script>
+  
+  -->
+  
+  <script>
+    $(document).foundation();
+  </script>
+		<script src="js/grid.js"></script>
+		<script>
+			$(function() {
+				Grid.init();
+			});
+		</script>
+  <script src="js/vendor/custom.modernizr.js"></script>
+  <!-- Responsive nav -->
+    <script>
+  $("nav select").change(function() {
+  window.location = $(this).find("option:selected").val();
+  });
+  </script>
+  <!-- end of Responsive nav -->
+  <!-- Add jQuery library -->
+  
+  <script>
+  jQuery('.skillbar').each(function(){
+	jQuery(this).find('.skillbar-bar').animate({
+		width:jQuery(this).attr('data-percent')
+	},4000);
+});
+  </script>
+
+  <!-- OWL CAROUSEL -->
+  <script>
+$("#owl-example").owlCarousel({
+ 
+    // Most important owl features
+    items : 1,
+    itemsDesktop : [1199,4],
+    itemsDesktopSmall : [980,3],
+    itemsTablet: [768,2],
+    itemsMobile : [479,1],
+    singleItem : false,
+ 
+    //Basic Speeds
+    slideSpeed : 200,
+    paginationSpeed : 800,
+ 
+    //Autoplay
+    autoPlay : 3500,
+    stopOnHover : false,
+    goToFirst : true,
+    goToFirstSpeed : 1000,
+ 
+    // Navigation
+    navigation : false,
+    navigationText : ["prev","next"],
+    goToFirstNav : true,
+    scrollPerPage : false,
+ 
+    //Pagination
+    pagination : false,
+    paginationNumbers: false,
+ 
+    // Responsive 
+    responsive: true,
+    responsiveRefreshRate : 200,
+ 
+    // CSS Styles
+    baseClass : "owl-carousel",
+    theme : "owl-theme",
+ 
+    //Lazy load
+    lazyLoad : false,
+    lazyFollow : true,
+ 
+    //Auto height
+    autoHeight : false,
+ 
+    //JSON 
+    jsonPath : false, 
+    jsonSuccess : false,
+ 
+    //Mouse Events
+    mouseDrag : true,
+    touchDrag : true,
+ 
+    //Callbacks
+    beforeInit: false, 
+    afterInit: false, 
+    beforeMove: false, 
+    afterMove: false,
+    afterAction: false,
+    startDragging : false,
+ 
+    addClassActive : false
+ 
+})
+  </script>
+  		<script>
+			var hash = window.location.hash,
+				current = 0,
+				demos = Array.prototype.slice.call( document.querySelectorAll( '#codrops-demos > a' ) );
+			
+			if( hash === '' ) hash = '#set-1';
+			setDemo( demos[ parseInt( hash.match(/#set-(\d+)/)[1] ) - 1 ] );
+
+			demos.forEach( function( el, i ) {
+				el.addEventListener( 'click', function() { setDemo( this ); } );
+			} );
+
+			function setDemo( el ) {
+				var idx = demos.indexOf( el );
+				if( current !== idx ) {
+					var currentDemo = demos[ current ];
+					currentDemo.className = currentDemo.className.replace(new RegExp("(^|\\s+)" + 'current-demo' + "(\\s+|$)"), ' ');
+				}
+				current = idx;
+				el.className = 'current-demo'; 
+			}
+		</script>
+		
+	<!-- Refine Slider -->
+    <script src="js/refine-slider/jquery.refineslide.js"></script>
+    <script>
+        $(function () {
+            var $upper = $('#upper');
+
+            $('#images').refineSlide({
+                transition : 'fade',
+                onInit : function () {
+                    var slider = this.slider,
+                       $triggers = $('.translist').find('> li > a');
+
+                    $triggers.parent().find('a[href="#_'+ this.slider.settings['transition'] +'"]').addClass('active');
+
+                    $triggers.on('click', function (e) {
+                       e.preventDefault();
+
+                        if (!$(this).find('.unsupported').length) {
+                            $triggers.removeClass('active');
+                            $(this).addClass('active');
+                            slider.settings['transition'] = $(this).attr('href').replace('#_', '');
+                        }
+                    });
+
+                    function support(result, bobble) {
+                        var phrase = '';
+
+                        if (!result) {
+                            phrase = ' not';
+                            $upper.find('div.bobble-'+ bobble).addClass('unsupported');
+                            $upper.find('div.bobble-js.bobble-css.unsupported').removeClass('bobble-css unsupported').text('JS');
+                        }
+                    }
+
+                    support(this.slider.cssTransforms3d, '3d');
+                    support(this.slider.cssTransitions, 'css');
+                }
+            });
+        });
+    </script>
+	<!-- end of Refine Slider -->
+</body>
+</html>
